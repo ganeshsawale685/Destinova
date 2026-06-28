@@ -1,0 +1,145 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* MAIN LAYOUT */
+.admin-container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+/* LOGO */
+.logo {
+  margin-bottom: 30px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5f5;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.sidebar a.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* MAIN CONTENT AREA */
+.main-content {
+  margin-left: 240px;   /* 🔥 FIX */
+  width: calc(100% - 240px);
+  min-height: 100vh;
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOPBAR */
+.topbar {
+  height: 60px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* DASHBOARD */
+.dashboard {
+  width: 100%;
+}
+
+/* HEADING */
+.dashboard h2 {
+  margin-bottom: 20px;
+}
+
+/* CARDS GRID */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD DESIGN */
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Destination */
+
+/* MODAL BACKGROUND */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+/* Packages */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}

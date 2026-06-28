@@ -1,0 +1,19 @@
+const SERVER_BASE_URL = "http://localhost:3000"
+
+export default {
+   FETCH_DESTINATIONS: SERVER_BASE_URL+"/destinations",
+   FETCH_PACKAGES_BY_DESTINATION: SERVER_BASE_URL+"/destinations",
+   FETCH_PACKAGES:SERVER_BASE_URL+"/packages",
+   FETCH_USER_SIGN_IN:SERVER_BASE_URL+"/users",
+   FETCH_BOOKING:SERVER_BASE_URL+"/booking",
+
+   // Admin
+   FETCH_ADMIN_DESTINATION:SERVER_BASE_URL+"/admin/destinations",
+   FETCH_ADMIN_PACAKGES:SERVER_BASE_URL+"/admin/packages",
+   FETCH_ADMIN_ADDPACKAGE:SERVER_BASE_URL+"/admin/package",
+   FETCH_ADMIN_ALLUSERS:SERVER_BASE_URL+"/admin/users",
+   FETCH_ADMIN_ALLBOOKINGS :SERVER_BASE_URL+"/admin/bookings",
+
+   //CHATBOT
+   FETCH_CHATBOT:SERVER_BASE_URL+"/chat"
+}
